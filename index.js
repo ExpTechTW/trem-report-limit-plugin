@@ -23,7 +23,7 @@ class Plugin {
   }
 
   onLoad() {
-    const { TREM, logger , info , utils} = this.#ctx;
+    const { TREM, info , utils} = this.#ctx;
 
     const defaultDir = utils.path.join(info.pluginDir,"./report-limit/resource/default.yml");
     const configDir = utils.path.join(info.pluginDir, "./report-limit/config.yml");
